@@ -1,0 +1,21 @@
+[alias]
+  ci = commit --verbose
+  br = branch
+  st = status
+  su = submodule update --init --recursive
+  flog = log --pretty=fuller --decorate
+  lol = log --graph --decorate --oneline
+  lola = log --graph --decorate --oneline --all
+  brr = branch -r --sort=commiterdate
+  brrr = -r --sort=commiterdate
+  force = push --force-with-lease
+
+[push]
+  recurseSubmodules=check
+
+[apply]
+  whitespace = nowarn
+
+[core]
+  pager = less -FXRS -x2
+  excludesfile = ~/.gitignore
